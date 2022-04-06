@@ -28,11 +28,21 @@ function knop3Overgang() {
 
 
 var loaderOverlay = document.querySelector('.loader');
+var loaderButton = document.querySelector('.loader button');
 
 var loaderVideo = document.querySelector('.loader video');
 loaderVideo.addEventListener('ended', loading, false);
 
 function loading() {
-    loaderOverlay.classList.add('hidden');
+    loaderButton.classList.add('visible');
 }
+
+loaderButton.addEventListener('click', hideLoader);
+
+function hideLoader() {
+    loaderOverlay.classList.add('hidden');
+    video.autoplay = true;
+    video.load();
+}
+
 
