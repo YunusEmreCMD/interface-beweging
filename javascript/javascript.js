@@ -28,21 +28,36 @@ function knop3Overgang() {
 
 
 var loaderOverlay = document.querySelector('.loader');
-var loaderButton = document.querySelector('.loader button');
 
 var loaderVideo = document.querySelector('.loader video');
 loaderVideo.addEventListener('ended', loading, false);
 
-function loading() {
-    loaderButton.classList.add('visible');
+var startButton = document.querySelector('.start button');
+var startOverlay = document.querySelector('.start');
+
+startButton.addEventListener('click', startLoader);
+
+function startLoader() {
+    startOverlay.classList.add('hidden');
+    loaderVideo.autoplay = true;
+    loaderVideo.load();
 }
 
-loaderButton.addEventListener('click', hideLoader);
 
-function hideLoader() {
+
+function loading() {
+    // loaderButton.classList.add('visible');
     loaderOverlay.classList.add('hidden');
     video.autoplay = true;
     video.load();
 }
+
+// loaderButton.addEventListener('click', hideLoader);
+
+// function hideLoader() {
+//     loaderOverlay.classList.add('hidden');
+//     video.autoplay = true;
+//     video.load();
+// }
 
 

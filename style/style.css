@@ -138,24 +138,36 @@ h2 {
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 1000;
-}
-
-.loader button {
-    position: absolute;
-    left: 50%;
-    bottom: 50px;
-    transform: translateX(-50%);
-    opacity: 0;
-    visibility: hidden;
-    transition: 250ms;
+    z-index: 999;
 }
 
 .loader.hidden {
     display: none;
 }
 
-.loader button.visible {
-    opacity: 1;
-    visibility: visible;
+
+
+/* START */
+
+.start {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+
+.start button {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    transition: 250ms;
+}
+
+.start.hidden {
+    display: none;
 }
