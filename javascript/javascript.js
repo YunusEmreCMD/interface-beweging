@@ -1,9 +1,27 @@
-// console.log('abc');
+console.log('abcd');
 
-// var knoppenContainer = document.getElementsByClassName("knoppen-container");
 
-// var bekijkKnop = document.getElementsByClassName("knoppen-container h2");
+var knop1 = document.getElementById('knop1');
+var knop2 = document.getElementById('knop2');
+var knop3 = document.getElementById('knop3');
+var video = document.getElementById('video');
 
-// bekijkKnop.addEventListener("click", function() {
-// 	knoppenContainer.classList.toggle("toonKnoppen");
-// });
+
+knop1.addEventListener('click', knop1);
+knop2.addEventListener('click', knop2);
+knop3.addEventListener('click', knop3);
+
+function knop1Overgang() {
+    video.src = "videos/State1-zwemmen.mp4";
+    console.log('knop1');
+}
+
+function knop2Overgang() {
+    video.src = "videos/State2-lopen.mp4";
+    console.log('knop2');
+}
+
+function knop3Overgang() {
+    video.src = "videos/State3-springen.mp4";
+    console.log('knop3');
+}

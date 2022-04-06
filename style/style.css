@@ -66,6 +66,7 @@ h2 {
 .knoppen-container img {
     width: 200px;
     border-top: 3px solid lightgray;
+    cursor: pointer;
 }
 
 .knoppen-container:hover {
@@ -111,6 +112,7 @@ h2 {
 .nieuw-knoppen-container img {
     width: 200px;
     border-top: 3px solid lightgray;
+    cursor: pointer;
 }
 
 .nieuw-knoppen-container:hover {
