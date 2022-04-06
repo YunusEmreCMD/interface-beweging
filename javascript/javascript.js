@@ -12,17 +12,17 @@ knop2.addEventListener('click', knop2Overgang);
 knop3.addEventListener('click', knop3Overgang);
 
 function knop1Overgang() {
-    video.src = "videos/State1-zwemmen.mp4";
+    video.src = "videos/state1-zwemmen.mp4";
     console.log('knop1');
 }
 
 function knop2Overgang() {
-    video.src = "videos/State2-lopen.mp4";
+    video.src = "videos/state2-lopen.mp4";
     console.log('knop2');
 }
 
 function knop3Overgang() {
-    video.src = "videos/State3-springen.mp4";
+    video.src = "videos/state3-springen.mp4";
     console.log('knop3');
 }
 
