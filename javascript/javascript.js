@@ -7,9 +7,9 @@ var knop3 = document.getElementById('knop3');
 var video = document.getElementById('video');
 
 
-knop1.addEventListener('click', knop1);
-knop2.addEventListener('click', knop2);
-knop3.addEventListener('click', knop3);
+knop1.addEventListener('click', knop1Overgang);
+knop2.addEventListener('click', knop2Overgang);
+knop3.addEventListener('click', knop3Overgang);
 
 function knop1Overgang() {
     video.src = "videos/State1-zwemmen.mp4";
