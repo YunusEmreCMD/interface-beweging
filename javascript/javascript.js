@@ -25,3 +25,14 @@ function knop3Overgang() {
     video.src = "videos/State3-springen.mp4";
     console.log('knop3');
 }
+
+
+var loaderOverlay = document.querySelector('.loader');
+
+var loaderVideo = document.querySelector('.loader video');
+loaderVideo.addEventListener('ended', loading, false);
+
+function loading() {
+    loaderOverlay.classList.add('hidden');
+}
+

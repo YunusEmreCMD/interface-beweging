@@ -130,3 +130,11 @@ h2 {
     border: none;
     background: none;
 }
+
+.loader {
+    display: block;
+}
+
+.loader.hidden {
+    display: none;
+}
