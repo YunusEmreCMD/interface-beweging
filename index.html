@@ -10,18 +10,45 @@
 </head>
 
 <body class="animatie">
-    <video autoplay muted preload="auto">
-        <source src="videos/loading-state.mp4" type="video/mp4">
-    </video>
+    <section class="loader">
+        <video autoplay muted preload="auto">
+            <source src="videos/loading-state.mp4" type="video/mp4">
+        </video>
+        <button class="bekijk-animaties">
+            Bekijk animaties
+        </button>
+    </section>
+
+    <section>
+        <video autoplay loop id="video" src="videos/State1-zwemmen.mp4">
+            <!-- <source src="videos/state1-zwemmen.mp4" type="video/mp4"> -->
+        </video>
+
+        <section class="knoppen-container">
+            <h2>Bekijk alle states</h2>
+            <ul>
+                <li>
+                    <img src="videos/1-Knop-nieuw.gif" alt="" id="knop1">
+                </li>
+                <li>
+                    <img src="videos/2-Knop-Nieuw-2.gif" alt="" id="knop2">
+                </li>
+                <li>
+                    <img src="videos/3-Knop-nieuw.gif" alt="" id="knop3">
+                </li>
+            </ul>
+        </section>
+    </section>
+
 </body>
 
-<script>
+<!-- <script>
     var setTimeout;
 
     setTimeout(function () {
         location.href = "animatie.html";
     }, 7400);
-</script>
+</script> -->
 
 <script src="javascript/javascript.js"></script>
 
